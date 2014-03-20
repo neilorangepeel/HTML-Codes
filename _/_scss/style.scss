@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+$lightGray:             #F3F3F3;
+$darkGray:              #4C4952;
+
+@import 'reset';
+
+body {
+    font-family: Georgia, serif;
+    font-size: 1.8em;
+    text-align: left;
+    color: $darkGray;
+}
+.wrapper {
+    width: 80rem;
+    min-width: 50%;
+    margin: 8rem auto;
+}
+.search {
+    width: 100%;
+    margin-bottom: 7rem;
+    border-bottom: 4px solid $lightGray;
+    font-size: 5rem;
+    color: $darkGray;
+}
+table {
+    width: 100%;
+    border-collapse:collapse;
+
+    th {
+        font-weight: bold;
+        padding: 1rem 3rem;
+    }
+    tr  {
+        border-bottom: 2px solid $lightGray;
+        &:nth-child(1) {
+            border-top: 2px solid $lightGray;
+        }
+    }
+    td {
+        padding: 4rem 3rem;
+    }
+}
+.character {
+    padding: 2rem;
+    font-size: 6rem;
+    line-height: 6rem;
+    text-align: center;
+    font-family: 'Source Code Pro', Monaco, Consolas, "Lucida Console", monospace;
+    background: #F7F9FA;
+}
+.empty:before {
+    content: '‐‐‐‐‐‐';
+    color: $lightGray;
+    pointer-events: none;
+}
